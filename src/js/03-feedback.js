@@ -44,3 +44,4 @@ function populateTextarea() {
 
     message.value = parsedData.message || '';
 }
+
