@@ -9,7 +9,7 @@ const blockGallery = document.querySelector('.gallery');
 const galleryItemsMarkup = createGalleryItems(galleryItems);
 
 blockGallery.insertAdjacentHTML('beforeend', galleryItemsMarkup);
-blockGallery.addEventListener('click', handleGalleryContainer)
+
 
 function createGalleryItems(elements) {
     return elements.map(({ preview, original, description }) => {
@@ -32,6 +32,7 @@ const lightbox = new SimpleLightbox('.gallery a', {
   scrollZoomFactor: 0.2,
   captionsData: 'alt',
   captionDelay: 250,
+  close: true, 
 });
 
-console.log(galleryItems);
+
